@@ -17,7 +17,7 @@ export const dataReducer = (state = initialState, action) => {
         case FETCH_DATA_SUCCESS:
             return {
                 ...state,
-                data: [...state.data, action.payload],
+                data: action.payload,
                 error: '',
                 isFetching: false
             }

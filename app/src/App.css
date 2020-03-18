@@ -1,0 +1,48 @@
+body{
+    background-color: #2F363D;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.ranged{
+    background-color: #167C13;
+}
+
+.melee{
+    background-color: #B9500B;
+}
+
+.card{
+    /* border: 1px solid black; */
+    margin: 4px;
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card img{
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.text-container{
+    padding: 0 10px;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+p{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
