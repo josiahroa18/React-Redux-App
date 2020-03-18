@@ -6,6 +6,7 @@ import { getHeroes } from './actions/dataActions';
 // Style and Component Imports
 import HeroCard from './components/HeroCard';
 import './App.css';
+import video from './assets/video.mp4'
 
 // Material UI Imports
 import Backdrop from '@material-ui/core/Backdrop';
@@ -28,20 +29,21 @@ function App() {
 
   const classes = useStyles();
 
-
   useEffect(() => {
     dispatch(getHeroes());
   }, [])
-
-  // useEffect(() => {
-  //   console.log(heroData);
-  // }, [heroData]);
 
   return (
     <div className="App">
       <Backdrop className={classes.backdrop} open={isFetching}>
         <CircularProgress color="inherit" />
       </Backdrop>
+      {heroData && 
+        <video autoPlay muted loop className='video'>
+          <source src={video} type='video/mp4'/>
+        </video>
+      }
+      <h1>Dota 2 Characters</h1>
       {error && <h1>{error}</h1>}
       <section className='card-container'>
         {heroData && heroData.map(hero => {

@@ -1,26 +1,35 @@
 body{
-    background-color: #2F363D;
+    /* background-color: #2F363D; */
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #FDE6E3;
+    margin: 50px 0;
 }
 
 .card-container{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .ranged{
-    background-color: #167C13;
+    background-color: rgba(22,124,19,.5);
 }
 
 .melee{
-    background-color: #B9500B;
+    background-color: rgba(185,80,11,.5);
 }
 
 .card{
     /* border: 1px solid black; */
-    margin: 4px;
+    margin: 10px 20px;
     border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 .card:hover{
@@ -37,12 +46,48 @@ body{
     padding: 0 10px;
 }
 
-h1{
+h2{
     font-size: 2rem;
     margin: 10px 0;
+    color: white;
+}
+
+h3{
+    font-size: 1.7rem;
+    margin: 10px 0;
+    color: white;
 }
 
 p{
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    color: white;
 }
+
+.role-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    justify-content: center;   
+    margin: 0 auto;
+}
+
+.badge{
+    background: linear-gradient(to bottom right, #555 0%, #333 100%);
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 5px;
+}
+
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
