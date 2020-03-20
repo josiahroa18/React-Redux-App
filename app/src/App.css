@@ -1,0 +1,121 @@
+body{
+    background-color: #2F363D;
+}
+
+h1{
+    font-family: 'Bitter', serif;
+    font-size: 7rem;
+    text-align: center;
+    color: #907F6F;
+    margin: 50px 0;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 10px 0;
+    color: white;
+}
+
+h3{
+    font-size: 1.7rem;
+    margin: 10px 0;
+    color: white;
+}
+
+p{
+    font-size: 1.3rem;
+    color: white;
+}
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    width: 300px;
+    margin-left: 50px;
+}
+
+header nav{
+    margin-right: 50px;
+}
+
+header nav a{
+    color: #907F6F;
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.ranged{
+    background-color: rgba(22,124,19,.5);
+}
+
+.melee{
+    background-color: rgba(185,80,11,.5);
+}
+
+.card{
+    /* border: 1px solid black; */
+    margin: 10px 20px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card img{
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.text-container{
+    padding: 0 10px;
+}
+
+.role-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    justify-content: center;   
+    margin: 0 auto;
+}
+
+.badge{
+    background: linear-gradient(to bottom right, #555 0%, #333 100%);
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 5px;
+}
+
+video{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+
